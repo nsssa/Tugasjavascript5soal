@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image.htlm</title>
+</head>
+
+
+<body>
+    <select name="" id="daftar" onchange="tampil()">
+        <option value="">--Piih Hewan--</option>
+        <option value="badak">Badak</option>
+        <option value="harimau">Harimau</option>
+        <option value="panda">Panda</option>
+        <option value="koala">Koala</option>
+        <option value="trex">T-rex</option>
+    </select>
+    <div id="hasil"></div>
+
+    <script>
+        let daftar = document.getElementById("daftar")
+        let hasil = document.getElementById("hasil")
+
+        function tampil() {
+            switch (daftar.value) {
+                case "badak":
+                    hasil.innerHTML = '<img src="badak.jpg" alt="">'
+                    alert("ini adalah gambar badak.jpg")
+                    break;
+
+                case "harimau":
+                    hasil.innerHTML = '<img src="harimau.jpg" alt="">'
+                    alert("ini adalah gambar harimau.jpg")
+                    break;
+
+                 case "panda":
+                    hasil.innerHTML = '<img src="panda.jpg" alt="">'
+                    alert("ini adalah gambar panda.jpg")
+                    break;
+
+                case "koala":
+                    hasil.innerHTML = '<img src="koala.jpg" alt="">'
+                    alert("ini adalah gambar koala.jpg")
+                    break;
+
+                 case "trex":
+                    hasil.innerHTML = '<img src="trex.jpg" alt="">'
+                    alert("ini adalah gambar trex.jpg")
+                    break;
+
+
+
+
+                default:
+                    hasil.innerHTML = "PILIH GAMBARNYA GAES"
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
